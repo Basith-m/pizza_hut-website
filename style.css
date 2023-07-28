@@ -1,0 +1,429 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.head-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem;
+    background-color: black;
+}
+
+.logo{
+    width: 12vh;
+}
+
+.logo img{
+    width:  12vh;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-links ul{
+    display: flex;
+    list-style: none;
+}
+
+.links{
+    padding: 1rem 2rem;
+}
+
+
+.links a,i{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+    font-weight: 600;                                                           
+}
+
+
+.links:hover a{
+    color: red;
+}
+
+.links:hover i{
+    color: red;
+}
+
+.logo:hover img{
+    animation: zoom 0.75s;
+}
+
+@keyframes zoom{
+    50%{
+        transform: scale(1.5, 1.5);
+    }
+}
+
+nav{
+    margin-left: 14rem;
+}
+
+.banner{
+    /* background: url('images/bg.jpg') no-repeat; */
+    position: relative;
+}
+
+.banner-img{
+    width: 100%;
+    height: 650px;
+    filter: brightness(40%);
+    z-index: 1;
+}
+
+
+.banner-container{
+    padding: 2rem 12rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+
+.pizza-img{
+    width: 70vh;
+}
+
+.pizza-img img{
+    width: 70vh;
+}
+
+.banner-content{
+    margin: 0px 2rem 0px 0px;
+    width: 100%;
+}
+
+.banner-content h2{
+    font-family: 'Nothing You Could Do', cursive;
+    color: #fac564;;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: right;
+    margin-bottom: 1.5rem;
+}
+
+.banner-content h1{
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: right;
+    margin-bottom: 1.5rem;
+}
+
+.banner-content p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 60vh;
+}
+
+.btn a{
+    text-decoration: none;  
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    margin: 0px 4px;
+}
+
+.btn-1{
+    color: black;
+    background-color: #fac564;
+}
+
+.btn-2{
+    color: #fff;
+    border: 1px solid #fac564;
+}
+
+.btn-1:hover{
+    border: none;
+    color: #fff;
+    background-color: rgb(255, 54, 54);
+}
+
+#about{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.btn-2:hover{
+    border: none;
+    background-color: rgb(255, 54, 54);
+}
+
+.about-img{
+    width: 50%;
+}
+
+.about-img img{
+    width: 100%;
+    filter: brightness(60%);
+}
+
+.about-content{
+    width: 50%;
+    color: #ffff;
+    padding: 0px 4rem;
+}
+
+.about-head h2{
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    margin: 0px 0px 1rem 0px;
+}
+
+.about-para p{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0.5rem 0px 0.5px 0px;
+    letter-spacing: 1px;
+}
+
+.about-btn a{
+    text-decoration: none;  
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    display: inline-block;   
+    margin-top: 1rem;
+}
+
+#menu{
+    background-image: linear-gradient(rgb(197, 237, 255) , rgb(0, 181, 253));
+}
+
+.sp-items{
+    color: white;
+    text-align: center;
+    padding: 2rem 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item{
+    width: 320px;
+    padding:1.5rem 1rem 1rem 1rem;
+    margin: 1rem 1rem;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.item .item-img img{
+    width: 80%;
+    margin: 1rem 0px;
+}
+
+.menu-head{
+    padding: 4rem 0px 0px 0px;
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+}
+
+.item-desc p{
+    text-align: justify;
+    font-size: 18px;
+    padding: 1rem;
+}
+
+.item .name span{
+    font-size: 1.5em;
+    color: green;
+    font-weight: 600;
+}
+
+.offer-container{
+    background: url('images/offer-pizza.jpg') no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+.offer-item{
+    padding: 6rem 8rem;
+    margin-right: 40rem;
+}
+
+.offer-head h2{
+    color: #ffff;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.5rem;
+}
+
+.offer-item-desc p{
+    color: #ffff;
+    text-align: justify;
+    font-size: 2rem;
+    opacity: 50%;
+    margin-top: 1rem;
+    line-height: 2rem;
+    font-family: 'Cookie', cursive;
+}
+
+.offer-btn{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.offer-btn a{
+    text-decoration: none;
+    background-color: rgb(35, 169, 35);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: black;
+}
+
+#explore{
+    background-image: linear-gradient(rgb(0, 183, 255), rgb(197, 237, 255));
+    color: rgb(44, 44, 44);
+    padding: 3rem;
+}
+
+.explore-head{
+    padding: 2rem 0.5rem;
+    font-size: 1.2rem;
+}
+
+.card-container{
+    padding: 0.4rem;
+}
+
+.card{
+    text-align: center;
+    width: 42vh;
+    height: 40vh;
+    border: 1px dotted;
+    padding: 1rem;
+}
+
+.card-icon{
+    margin: 1.5rem 0px;
+}
+
+.card-head{
+    margin: 0.5rem 0px;
+}
+
+.card-head h4{
+    font-size: 1.2rem;
+    color: rgb(159, 0, 0);
+    margin: 0.5rem 0px;
+}
+
+.card-head p{
+    font-size: 17px;
+    line-height: 1.6rem;
+    padding: 1.5rem 0px;
+}
+
+.card-link{
+    text-align: center;
+    width: 42vh;
+    height: auto;
+    border: 1px dotted;
+    padding: 1rem; 
+    border-top: none;
+}
+
+.card-link a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 800;
+    color: rgb(126, 0, 0);
+}
+
+.card-section{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: rgb(14, 14, 14);
+    color: white;
+}
+
+.footer-container{
+    padding: 4rem 5rem 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content-head h4{
+    font-size: 24px;
+    color: rgb(255, 159, 255);
+    opacity: 50%;
+    margin-bottom: 2rem;
+    letter-spacing: 3px;
+}
+
+.footer-content-list a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffff;
+    line-height: 2rem;
+    opacity: 60%;
+    letter-spacing: 1px;
+}
+
+.footer-content-list li{
+    list-style: none;
+}
+
+.copyright{
+    padding: 1rem;
+    background-color: black;
+    border-top: 0.5px solid gray;
+    text-align: center;
+}
+
+.copyright span{
+    text-align: center;
+    opacity: 50%;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media a{
+    text-decoration: none;
+    opacity: 70%;
+}
+
+.social-media i{
+    font-size: 2rem;
+}
+
+/* media query */
+
+@media (max-width: 1140px)
+{
+   .banner-img{
+    width: auto;
+   }
+
+}
